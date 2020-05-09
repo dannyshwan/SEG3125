@@ -1,4 +1,10 @@
-# seg3125
+# SEG3125
+
+```
+   My repo for my UI Analysis and Design class SEG3125
+
+   Daniel Shwan (dshwa099@uottawa.ca)
+```
 
 ## Project setup
 ```
