@@ -70,7 +70,7 @@ class Header extends React.Component{
                   <Link className='link' to='/programs'>{t("Development_Header")}</Link>
                   <HelpIcon id="iconButtons" onClick={() => {this.showContent()}}/>
                   <LanguageIcon id="iconButtons" onClick={() => {this.openChangeLanguageDialog()}} />
-                  <CodeIcon onClick={() => {window.open("https://github.com/dannyshwan/Turnips/tree/master/src/components/SEG3125_BytownFC")}}/>
+                  <CodeIcon id="iconButtons" onClick={() => {window.open("https://github.com/dannyshwan/Turnips/tree/master/src/components/SEG3125_BytownFC")}}/>
                </div>
             </div>
             <Dialog
