@@ -7,6 +7,9 @@ function App() {
     <div className="App">
       <h1>UI Analysis and Design labs</h1>
       <br/>
+      <Button>
+        
+      </Button>
     </div>
   );
 }
