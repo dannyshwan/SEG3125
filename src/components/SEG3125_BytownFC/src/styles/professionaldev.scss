@@ -1,0 +1,27 @@
+#pd{
+   background: url('../assets/img/previews/professionaldevelopment.png');
+   background-repeat: no-repeat;
+   background-size: cover;
+   color: whitesmoke;
+   flex-direction: column;
+}
+
+#about_prodev{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#description_pd{
+   font-family: "Poppins", sans-serif;
+   p{
+      font-size: 0.97rem;
+   }
+}
+
+#title_pd{
+   font-family: "Bebas Neue", sans-serif;
+   font-size: 2.5rem;
+   margin: 0 5px;
+   letter-spacing: 5px;
+}

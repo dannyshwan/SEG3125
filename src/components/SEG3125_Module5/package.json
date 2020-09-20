@@ -1,0 +1,33 @@
+{
+  "title": "SEG3125 Lab 5 - JQuery",
+  "name": "seg3125-lab5",
+  "version": "4.2.1",
+  "author": "Daniel Shwan",
+  "scripts": {
+    "start": "node_modules/.bin/gulp watch"
+  },
+  "description": "A basic HTML starter template for Bootstrap",
+  "keywords": [
+    "css",
+    "sass",
+    "html",
+    "responsive",
+    "theme",
+    "template"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "4.3.1",
+    "bootstrap-datepicker": "^1.9.0",
+    "bootstrap-icons": "^1.0.0-alpha4",
+    "jquery": "^3.5.1"
+  },
+  "devDependencies": {
+    "browser-sync": "2.26.7",
+    "del": "^4.1.1",
+    "gulp": "4.0.2",
+    "gulp-sass": "^4.1.0",
+    "merge-stream": "2.0.0",
+    "node-sass": "^4.14.1"
+  }
+}

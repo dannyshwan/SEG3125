@@ -1,0 +1,51 @@
+#fields{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   background: whitesmoke;
+   min-height: 78vh;
+   width: auto;
+}
+
+#field_cards{
+   justify-content: center;
+   display: flex;
+}
+
+.typography p{
+   font-family: 'Catamaran', sans-serif;
+   margin: 5px;
+}
+
+.info_card{
+   width: 25rem;
+   font-family: 'Ubuntu', sans-serif;
+   margin: 25px 10px;
+
+   @media screen and (max-width: 600px){
+      width: 20rem;
+   }
+}
+
+.info_card:hover{
+   cursor: pointer;
+   
+}
+
+form{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+}
+
+.form_input{
+   padding: 50px;
+}
+
+#payment_title{
+   display: inherit;
+   align-items: center;
+   font-size: 1.5rem;
+   font-weight: 800;
+}

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>L-Mart</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link href="styles/style.css" rel="stylesheet" type="text/css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<section id="shopping_content">
+  <div>
+    <img src="./assets/Logo.png" alt="logo" style="height:150px;">
+    <p><i>Where you can buy top quality products</i></p>
+  </div>
+  <div>
+    <div id="Client" class="tabcontent">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item active" aria-current="page">Home</li>
+        </ol>
+      </nav>
+      <br>
+      <h3><b>Welcome to L-Mart Online Shopping!</b></h3>
+      <p>Please tell us a bit about yourself to get the best shopping experience!</p>
+      <h6 class="customer_information"><b>Do you have any dietary restrictions?</b></h6>
+      <div id="dietSelect" name="dietSelect" onchange="populateListProductChoices()">
+        <div>
+          <div class="form-check form-check-inline">
+            <label class="form-check-label selection_label">Vegetarian</label>
+            <input class="form-check-input" type="checkbox" id="Vegetarian">
+          </div>
+          <div class="form-check form-check-inline">
+            <label class="form-check-label selection_label">Gluten Free</label>
+            <input class="form-check-input" type="checkbox" id="GlutenFree">
+          </div>
+        </div>
+        <br>
+        <h6 class="customer_information"><b>Would you prefer to view only organic products?</b></h6>
+        <div>
+          <div class="form-check form-check-inline">
+            <label for="yes" class="form-check-label selection_label">Yes</label>
+            <input class="form-check-input" name="organicOnly" type="radio" id="yes" value="yes">
+          </div>
+          <div class="form-check form-check-inline">
+            <label for="no" class="form-check-label selection_label">No</label>
+            <input class="form-check-input" name="organicOnly" type="radio" id="no" value="no">
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <button type="button" onclick="openInfo(event, 'Products')" class="btn btn-outline-dark">
+        Next
+      </button>
+    </div>
+
+    <div id="Products" class="tabcontent">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a onclick="openInfo(event, 'Client')" id="default">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Products</li>
+        </ol>
+      </nav>
+      <br>
+      <h4>Below are products based on your preferences and dietary restrictions.</h4>
+      <h6>(Max 10 items per purchase)</h6>
+      <br>
+      <div id="accordion">
+        <!-- CARDS INSPIRED BY BOOTSTRAP4 DOCUMENTATION-->
+        <div id="bakery_section" class="card">
+          <div class="card-header">
+            <a class="card-link" data-toggle="collapse" href="#collapseOne">
+              BAKERY
+            </a>
+          </div>
+          <div id="collapseOne" class="collapse" data-parent="#accordion">
+            <div id="bakery" class="card-body">
+            </div>
+          </div>
+        </div>
+        <div id="dairy_section" class="card">
+          <div class="card-header">
+            <a class="card-link" data-toggle="collapse" href="#collapseTwo">
+              DAIRY
+            </a>
+          </div>
+          <div id="collapseTwo" class="collapse" data-parent="#accordion">
+            <div id="dairy" class="card-body">
+            </div>
+          </div>
+        </div>
+        <div id="fruit_section" class="card">
+          <div class="card-header">
+            <a class="card-link" data-toggle="collapse" href="#collapseThree">
+              FRUITS
+            </a>
+          </div>
+          <div id="collapseThree" class="collapse" data-parent="#accordion">
+            <div id="fruit" class="card-body">
+            </div>
+          </div>
+        </div>
+        <div id="vegetable_section" class="card">
+          <div class="card-header">
+            <a class="card-link" data-toggle="collapse" href="#collapseFour">
+              VEGETABLES
+            </a>
+          </div>
+          <div id="collapseFour" class="collapse" data-parent="#accordion">
+            <div id="vegetable" class="card-body">
+            </div>
+          </div>
+        </div>
+        <div id="meat_section" class="card">
+          <div class="card-header">
+            <a class="card-link" data-toggle="collapse" href="#collapseFive">
+              MEAT
+            </a>
+          </div>
+          <div id="collapseFive" class="collapse" data-parent="#accordion">
+            <div id="meat" class="card-body">
+            </div>
+          </div>
+        </div>
+        <div id="seafood_section" class="card">
+          <div class="card-header">
+            <a class="card-link" data-toggle="collapse" href="#collapseSix">
+              SEAFOOD
+            </a>
+          </div>
+          <div id="collapseSix" class="collapse" data-parent="#accordion">
+            <div id="seafood" class="card-body">
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <button id="addCart" type="button" onclick="selectedItems(); openInfo(event, 'Cart');" class="btn btn-outline-success">
+        Add selected items to cart.
+      </button>
+      <br>
+      <br>
+    </div>
+
+    <div id="Cart" class="tabcontent">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a onclick="openInfo(event, 'Client')" id="default">Home</a></li>
+          <li class="breadcrumb-item"><a onclick="openInfo(event, 'Products')">Products</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Checkout</li>
+        </ol>
+      </nav>
+      <br>
+      <h3>Checkout</h3>
+      <div id="displayCart"></div>
+      <br>
+      <button type="button" class="btn btn-outline-dark">
+        Confirm
+      </button>
+    </div>
+  </div>
+</section>
+
+<script src="scripts/groceries.js"></script>
+<script src="scripts/main.js"></script>
+<script>
+  openInfo(event, 'Client');
+</script>
+
+</body>
+<footer>
+  2020 © Daniel Shwan. All Rights Reserved
+</footer>
+</html>

@@ -1,0 +1,17 @@
+#banner{
+   background: #002a66;
+   color: whitesmoke;
+   display: flex;
+   align-items: center;
+   top: 12vh;
+   width: 100%;
+   font-family: "Bebas Neue", sans-serif;
+   letter-spacing: 2px;
+   height: 10vh;
+
+   p{
+      font-size: 3rem;
+      margin: 10px;
+      padding-left: 10vw;
+   }
+}

@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="Daniel Shwan"/>
+
+    <title>Bytown Cuts</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppin|Staatliches|Permanent+Marker">
+    <link href="css/theme.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/blitzer/jquery-ui.css" rel="stylesheet" type="text/css">-->
+    <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/material_red.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+      <div class="container">
+        <a class="navbar-brand" href="#title"><img src="./assets/logo.png" alt="logo" style="width: 7.5rem;" ></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#staff">Our Staff</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#scheduleCut">Schedule</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="title">
+      <div class="section_container">
+        <p class="section_title" style="font-size: 10rem; color: white">Bytown Cuts</p>
+        <h4 style="font-family:'Courier New', Courier, monospace;">How you want it. When you want it.</h4>
+        <button id="book_now" type="button" class="btn btn-danger"><a href="#scheduleCut" style="text-decoration: none; color: whitesmoke">Book Now</a></button>
+      </div>
+    </section>
+
+    <section id="about" class="information_sections">
+      <h1 class="section_title">About</h1>
+      <h4>Welcome to Bytown Cuts!</h4>
+      <p>
+        Since 2010, we strive to provide satisfying and beautiful haircuts to anyone with unmatched professionalism.<br/>
+        Our quirky, diverse, yet fun team will help you get the style you desire!
+      </p>
+      <div style="display: inherit; flex-direction: row; margin-top: 20px;">
+        <div class="location_and_hours">
+          <div class="icon_description">
+            <i class="material-icons">location_on</i>
+            <h6><b>Location</b></h6>
+          </div>
+          <hr>
+          <p>231 Elgin St, Ottawa, ON K2P 1N1</p>
+        </div>
+        <div class="location_and_hours">
+          <div class="icon_description">
+            <i class="material-icons">access_time</i>
+            <h6><b>Hours</b></h6>
+          </div>
+          <hr>
+          <p>
+            Monday to Friday: 10:30am - 5:00pm<br/>
+            Saturday: 11:30am - 2:00pm<br/>
+            Sunday: CLOSED
+          </p>
+        </div>
+        <div class="location_and_hours">
+          <div class="icon_description">
+            <i class="material-icons">email</i>
+            <h6><b>Contact</b></h6>
+          </div>
+          <hr>
+          <p>
+            Email: info@bytowncuts.ca <br/>
+            Phone: +1 613 267 2001
+          </p>
+        </div>
+      </div>
+
+    </section>
+
+    <hr>
+    <section id="staff" class="information_sections">
+      <br>
+      <h1 class="section_title">Our Staff</h1>
+      <h6><i>Some great things come in small packages!</i></h6>
+      <br>
+      <div class="card_arrangement">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="./assets/staff/Yukari.jpeg" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Yukari</h4>
+            <p class="card-text">
+              From Osaka, Japan, Yukari is known to be gentle and careful with her practice.
+              With 5 years of experience under her belt, she can confidently cut many different styles ranging to popular styles across Canada
+              and the US to styles from East Asia!
+            </p>
+            <br>
+            <div class="icon_description">
+              <i class="material-icons">event_available</i>
+              <h6><b>Availability</b></h6>
+            </div>
+            <p>
+              Saturday, Monday, Tuesday
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="./assets/staff/Simon.jpeg" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Simon</h4>
+            <p class="card-text">
+              A graduate from the Toronto Fade Master Academy, Simon has been in the industry for as far as he can remember. 
+              Both a perfectionist and an experimentalist, he devotes himself to delivering the best and never fails to have customers leave with a smile!
+            </p>
+            <br>
+            <div class="icon_description">
+              <i class="material-icons">event_available</i>
+              <h6><b>Availability</b></h6>
+            </div>
+            <p>
+              Wednesday, Friday, Saturday
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="./assets/staff/Alessandro.jpeg" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Alessandro</h4>
+            <p class="card-text">
+              The founder of Bytown Cuts and son of a Montreal barber, Alessandro's passion and confident in his practice makes him a fine barber.
+              Having over 10 years of experience, Ales' technical ability enables him to cut with great precision; making sure his customers walk
+              out as satisfied as possible!
+            </p>
+            <div class="icon_description">
+              <i class="material-icons">event_available</i>
+              <h6><b>Availability</b></h6>
+            </div>
+            <p>
+              Monday - Thursday
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="./assets/staff/Anna.jpeg" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Anne</h4>
+            <p class="card-text">
+              An Ottawa-native and a passionate stylist, Anne is creative when it comes to her practice. Never fearing the customer's requests, she
+              always comes up with a way to give her customers exactly what they want! 
+            </p>
+            <br>
+            <div class="icon_description">
+              <i class="material-icons">event_available</i>
+              <h6><b>Availability</b></h6>
+            </div>
+            <p>
+              Wednesday - Friday
+            </p>
+          </div>
+        </div>
+      </div>
+      <br>
+    </section>
+
+    <hr>
+
+    <section id="services" class="information_sections">
+      <br>
+      <h1 class="section_title">Services</h1>
+      <h6>Here are some services we provide!</h6>
+      <br>
+      <div class="card_arrangement">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="./assets/services/FullCut.jpeg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">
+              <img src="./assets/icons/cut_icon.png" alt="cut_icon" style="width: 1.5rem;">
+              Cut ($15-40)
+            </h5>
+            <p class="card-text">
+              Pick your style and we'll cut it!<br/><br/>
+              Trim: $15<br/>
+              Short: $25<br/>
+              Medium (around shoulder): $30<br/>
+              Long (after shoulder): $40
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="./assets/services/bang.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">
+              <img src="./assets/icons/cut_icon.png" alt="cut_icon" style="width: 1.5rem;">
+              Bang ($25)
+            </h5>
+            <p class="card-text">
+              Want a touch up on your bangs? Our team can help with trimming them to your desired length!
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="./assets/services/shave.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">
+              <img src="./assets/icons/shave_icon.png" alt="shave_icon" style="width: 1.5rem;">
+              Shave ($10)
+            </h5>
+            <p class="card-text">
+              In need for a trim on your facial hair? Or perhaps a new style? We've got you covered! You'll be walking out with a fresh new look!
+            </p>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="card_arrangement">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="./assets/services/wash.jpeg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">
+              <svg class="bi bi-droplet-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M8 16a6 6 0 0 0 6-6c0-1.655-1.122-2.904-2.432-4.362C10.254 4.176 8.75 2.503 8 0c0 0-6 5.686-6 10a6 6 0 0 0 6 6zM6.646 4.646c-.376.377-1.272 1.489-2.093 3.13l.894.448c.78-1.559 1.616-2.58 1.907-2.87l-.708-.708z"/>
+              </svg>
+              Wash ($15)
+            </h5>
+            <p class="card-text">
+              Need a wash? Our team can give you a warm, comfortable, yet satisfying professional wash using our products.
+              If combined with a cut, $5 will be taken off from the final cost!
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="./assets/services/dyed.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">
+              <svg class="bi bi-droplet-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M8 16a6 6 0 0 0 6-6c0-1.655-1.122-2.904-2.432-4.362C10.254 4.176 8.75 2.503 8 0c0 0-6 5.686-6 10a6 6 0 0 0 6 6zM6.646 4.646c-.376.377-1.272 1.489-2.093 3.13l.894.448c.78-1.559 1.616-2.58 1.907-2.87l-.708-.708z"/>
+              </svg>
+              Dye ($40)
+            </h5>
+            <p class="card-text">
+              Want to add some color to yourself? We'd be happy to dye your hair in any color we have at our salon!
+            </p>
+          </div>
+        </div>
+      </div>
+      <br>
+    </section>
+
+
+    <hr>
+
+    <section id="scheduleCut">
+      <br>
+      <br>
+      <h1 class="section_title">Schedule a Cut!</h1>
+      <form id="book_appointment" action="">
+        <div>
+          <div class="form_component form-group">
+            <label for="name_input">Name:</label>
+            <input id="name_input" class="form-control" type="text" placeholder="John Smith"></input> 
+          </div>
+          <div class="form_component form-group">
+            <label for="email_input">Email:</label>
+            <input 
+              id="email_input" 
+              class="form-control" 
+              type="text" 
+              placeholder="johnsmith@example.ca"
+              data-toggle="tooltip" 
+              data-placement="left" 
+              data-trigger="manual"
+              title="Must enter a validate email. Example: johnsmith@example.ca"
+              >
+            </input> 
+          </div>
+          <div class="form_component">
+            <label for="dateInput" >When would you like your appointment?</label>
+            <input id="dateInput" class="form-control" placeholder="yyyy-mm-dd" style="background-color: white;">
+          </div>
+          <br>
+          <div class="form_component">
+            <label>Select the service you wish to be provided:</label>
+            <div style="flex-direction: row;">
+              <div class="form-check form-check-inline">
+                 <label for="cut" class="form-check-label selection_label">Cut</label>
+                 <input class="form-check-input" name="service" type="checkbox" id="cut" value="cut">
+              </div>
+              <div class="form-check form-check-inline">
+               <label for="dye" class="form-check-label selection_label">Dye</label>
+               <input class="form-check-input" name="service" type="checkbox" id="dye" value="dye">
+              </div>
+              <div class="form-check form-check-inline">
+                <label for="wash" class="form-check-label selection_label">Shave</label>
+                <input class="form-check-input" name="service" type="checkbox" id="shave" value="shave">
+              </div>
+            </div>
+            <br>
+            <div style="flex-direction: row;">
+              <div class="form-check form-check-inline">
+                <label for="bang" class="form-check-label selection_label">Bang</label>
+                <input class="form-check-input" name="service" type="checkbox" id="bang" value="bang">
+              </div>
+              <div class="form-check form-check-inline">
+                <label for="wash" class="form-check-label selection_label">Wash</label>
+                <input class="form-check-input" name="service" type="checkbox" id="wash" value="wash">
+              </div>
+            </div>
+         </div>
+          <br>
+          <div class="form_component">
+              <label for="prefHairdresser">Is there a hairdresser you'd prefer?</label>
+              <select id="prefHairdresser" class="custom-select">
+                <option selected>Please select a value</option>
+                <option value="yukari">Yukari</option>
+                <option value="simon">Simon</option>
+                <option value="alessandro">Alessandro</option>
+                <option value="anne">Anne</option>
+                <option value="np">No Preference</option>
+              </select>
+          </div>
+          <br>
+          <div class="form_component">
+            <div class="icon_description" style="width: 100%;">
+              <i class="material-icons" style="font-size: 2rem;">credit_card</i>
+              <label for="creditcard_info" style="line-height: 1.75;">
+                Payment
+              </label>
+            </div>
+            <div id="creditcard_info">
+              <div class="form_component form-group">
+                <label for="creditcardOwner_input">      
+                  Card Owner        
+                </label>
+                <input id="creditcardOwner_input" class="form-control" type="text" placeholder="John A. Smith"></input> 
+              </div>
+              <div class="form_component form-group">
+                <label for="creditcardNumber_input">      
+                  Card Number      
+                  <a data-toggle="tooltip" data-placement="top" title="Customers are required to pay a $5 penalty should there be a cancellation">
+                    <i class="material-icons" style="font-size: 1rem;">info</i>
+                  </a>   
+                </label>
+                
+                <input 
+                  id="creditcardNumber_input" 
+                  class="form-control" 
+                  type="text"  
+                  maxlength="19" 
+                  placeholder="xxxx xxxx xxxx xxxx"
+                  data-toggle="tooltip" 
+                  data-placement="right" 
+                  data-trigger="manual"
+                  title="Card number must only contain numbers and must be 16 digits long"
+                  >
+                </input> 
+
+              </div>
+              <div class="payment_input">
+                <div class="form_component form-group" style="width: 50%;">
+                  <label for="expiryDate_input">Expiry Date</label>
+                  <input 
+                    id="expiryDate_input" 
+                    class="form-control" 
+                    type="text" 
+                    maxlength="5" 
+                    placeholder="MM YY"
+                    data-toggle="tooltip" 
+                    data-placement="left" 
+                    data-trigger="manual"
+                    title="Expiry date must only contain numbers, a valid month (1-12) (January - December), and contain 4 digits (MM YY)"
+                  ></input> 
+                </div>
+                <div class="form_component form-group" style="width: 50%;">
+                  <label for="CVC_input">
+                    CVC
+                    <a data-toggle="tooltip" data-placement="top" title="The 3-digits security code on the back the credit card">
+                      <i class="material-icons" style="font-size: 1rem;">info</i>
+                    </a>
+                  </label>
+                  <input 
+                    id="CVC_input" 
+                    class="form-control" 
+                    type="text" 
+                    maxlength="3" 
+                    placeholder="***"
+                    data-toggle="tooltip" 
+                    data-placement="right" 
+                    data-trigger="manual"
+                    title="Security number must only contain numbers and be 3 digits long"
+                  >
+                  </input> 
+                </div>
+              </div>
+            </div>
+        </div>
+        <br>
+          <div class="form_component">
+              <label for="additional">Is there any information you wish to let us know?</label>
+              <textarea class="form-control" id="additional" cols="10" rows="2"></textarea>
+          </div>
+          <br>
+        </div>
+        <button id="submit" type="button" class="btn btn-outline-info">Schedule</button>
+      </form>
+    </section>
+  </body>
+  <footer>
+    <p>2020 © Daniel Shwan. All Rights Reserved</p>
+  </footer>
+</html>

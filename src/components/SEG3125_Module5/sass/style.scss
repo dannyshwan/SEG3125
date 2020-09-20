@@ -1,0 +1,197 @@
+#title{
+   height: 100vh;
+   background-image: url('../assets/home.png');
+   background-size: cover;
+
+}
+
+#navbar{
+   height: 10vh;
+   font-family: 'Staatliches', sans-serif;
+   font-size: 1.5rem;
+   position: fixed;
+   top: 0;
+   width: 100%;
+   overflow: hidden;
+   z-index: 1;
+}
+
+#scheduleCut{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   border: 0 0 5px black;
+   width: 100%;
+   min-height: 92.5vh;
+   font-family: 'Poppin', sans-serif;
+}
+
+#book_appointment{
+   width: 35vw;
+}
+
+#text_question{
+   width: 100%;
+}
+
+#book_now{
+   font-size: 1.5rem;
+   padding: 0.5rem 1rem;
+   margin-top: 25px;
+}
+
+#submit{
+   font-size: 1.5rem;
+   width: 100%;
+}
+#creditcard_info{
+   display: flex;
+   width: 100%;
+   flex-direction: column;
+   label{
+      font-size: 1rem;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   }
+}
+
+.form-control, .custom-select{
+   border: 1px solid #D3D3D3;
+   border-bottom: 7.5px solid #D3D3D3;
+}
+
+.form-control:focus, .custom-select:focus{
+   border: 1px solid #E44766;
+   border-bottom: 7.5px solid #E44766;
+   box-shadow: none;
+}
+
+.navbar-brand{
+   font-size: 3rem;
+}
+
+.section_container{
+   display: flex;
+   height: 100%;
+   flex-direction: column;
+   font-size: 5rem;
+   align-items: center;
+   justify-content: center;
+   color: whitesmoke;
+}
+
+.form_component{
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   padding: 0 10px;
+}
+
+.selection_label{
+   margin: 0 15px;
+   font-weight: 100;
+   font-size: 1rem;
+}
+
+.icon_description{
+   display: flex;
+
+   h6{
+      line-height:1.5; 
+      padding: 0 5px; 
+      margin: 0;
+   }
+}
+
+.information_sections{
+   display: flex;
+   min-height: 60vh;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+
+.location_and_hours{
+   margin: 0 20px;
+
+   hr{
+      width: 100%;
+   }
+}
+
+.section_title{
+   font-family: 'Permanent Marker', sans-serif;
+   font-size: 3rem;
+   color: #E44766;
+   margin-top: 10vh;
+}
+
+.section_container{
+   display: flex;
+   height: 100%;
+   flex-direction: column;
+   font-size: 5rem;
+   align-items: center;
+   justify-content: center;
+   color: whitesmoke;
+}
+
+.card_arrangement{
+   display: flex;
+}
+.card{
+   margin: 0 25px;
+}
+.card-text{
+   color: rgb(78, 77, 77);
+}
+
+.payment_input{
+   display: inherit; 
+   flex-direction: row;
+   justify-content: center;
+}
+
+.error {
+   background-color: #fd6a87;
+ }
+
+p{
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+form{
+   color: rgb(50,50,50);
+   padding: 40px;
+   border-radius: 25px;
+}
+
+label{
+   font-size: 1.25rem;
+   font-weight: bold;
+   width: 100%;
+}
+
+hr{
+   width: 50%
+}
+
+footer{
+   background: rgb(50,50,50);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 0;
+   width: 100%;
+   text-align: center;
+   height: 7.5vh;
+   color: whitesmoke;
+
+   p{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      margin: 0;
+   }
+ }

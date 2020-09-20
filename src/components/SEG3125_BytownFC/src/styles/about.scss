@@ -1,0 +1,24 @@
+#about{
+   background: url('../assets/img/about.png');
+   background-repeat: no-repeat;
+   background-size: cover;
+   color: whitesmoke;
+}
+
+#about_section{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#description{
+   font-family: "Poppins", sans-serif;
+
+}
+
+#title_about{
+   font-family: "Bebas Neue", sans-serif;
+   font-size: 5rem;
+   margin: 0 5px;
+   letter-spacing: 5px;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Leetcode UI Questionnaire</title>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+      <link href="/styles/style.css" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>       
+    </head>
+   <body>
+      <section id="container">
+         <img id="leetcode" src="/assets/leetcode.png" alt="leetcode_icon"> 
+         <h1>LeetCode UI Evaluation</h1>
+         <h6>Click on the image below to be redirected to the webpage</h6>
+         <br>
+         <a href="https://leetcode.com/" target="_blank"><img id="webpage_preview" src="/assets/preview.png" alt="website_photo"></a>
+         <br>
+         <form action="">
+            <div>
+               <div class="questionnaire_component">
+                  <label class="question" for="text_question">What is your name?</label>
+                  <input id="name_question" class="form-control" name="participant_name" type="text" required></input>
+               </div>
+               <br>
+               <div class="questionnaire_component">
+                  <label class="question" for="text_question">What school do you go to?</label>
+                  <input id="school_question" class="form-control" name="school" type="text" required></input>
+               </div>
+               <br>
+               <div class="questionnaire_component">
+                  <label class="question">Do you find LeetCode helpful with improving your programming skills?</label>
+                  <div style="flex-direction: row;">
+                     <div class="form-check form-check-inline">
+                        <label for="yes" class="form-check-label selection_label">Yes</label>
+                        <input class="form-check-input" name="helpful" type="radio" id="yes" value="Yes">
+                     </div>
+                     <div class="form-check form-check-inline">
+                        <label for="no" class="form-check-label selection_label">No</label>
+                        <input class="form-check-input" name="helpful" type="radio" id="no" value="No">
+                     </div>
+                  </div>
+               </div>
+               <br>
+               <div class="questionnaire_component">
+                  <label class="question" for="upvote">What about this website do you find appealing?</label>
+                  <div id="upvote">
+                     <div style="flex-direction: row;">
+                        <div class="form-check form-check-inline">
+                           <label for="visuals" class="form-check-label selection_label">Great visuals</label>
+                           <input class="form-check-input" name="appeal" type="checkbox" id="visuals" value="Great visuals">
+                        </div>
+                        <div class="form-check form-check-inline">
+                           <label for="etu" class="form-check-label selection_label">Easy to use</label>
+                           <input class="form-check-input" name="appeal" type="checkbox" id="etu" value="Easy to use">
+                        </div>
+                        <div class="form-check form-check-inline">
+                           <label for="functional" class="form-check-label selection_label">Functions really well</label>
+                           <input class="form-check-input" name="appeal" type="checkbox" id="functional" value="Functions really well">
+                        </div>
+                     </div>
+                     <br>
+                     <div style="flex-direction: row;">
+                        <div class="form-check form-check-inline">
+                           <label for="reliable" class="form-check-label selection_label">Very reliable</label>
+                           <input class="form-check-input" name="appeal" type="checkbox" id="reliable" value="Very reliable">
+                        </div>
+                        <div class="form-check form-check-inline">
+                           <label for="efficient" class="form-check-label selection_label">Pretty efficient</label>
+                           <input class="form-check-input" name="appeal" type="checkbox" id="efficient" value="Pretty efficient">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <br>
+               <div class="questionnaire_component">
+                  <label class="question" for="improvements">What is one thing LeetCode should look to improve on?</label>
+                  <select id="improvements" name="need_improvement" class="custom-select" required>
+                     <option value="" selected disabled>Please select a value</option>
+                     <option value="Visuals">Visuals</option>
+                     <option value="Usability">Usability</option>
+                     <option value="Reliability">Reliability</option>
+                     <option value="Functionalities">Functionalities</option>
+                     <option value="Efficiency">Efficiency</option>
+                     <option value="Nothing">Nothing</option>
+                   </select>
+               </div>
+               <br>
+               <div class="questionnaire_component">
+                  <label class="question" for="recommendation">How likely would you recommend LeetCode to a student?</label>
+                  <select id="recommendation" name="recommend_likelihood" class="custom-select" required>
+                     <option value="" selected disabled>Please select a value</option>
+                     <option value="Definitely">Definitely</option>
+                     <option value="Likely">Likely</option>
+                     <option value="Maybe">Maybe</option>
+                     <option value="Unlikely">Unlikely</option>
+                     <option value="Never">Never</option>
+                  </select>
+               </div>
+               <br>
+            </div>
+            <button id="submit" type="submit" class="btn btn-outline-dark">Submit</button>
+         </form>
+      </section>
+      <script src="/assets/action.js"></script>
+   </body>
+   <br>
+   <br>
+   <footer>
+      2020 © Daniel Shwan. All Rights Reserved
+   </footer>
+</html>

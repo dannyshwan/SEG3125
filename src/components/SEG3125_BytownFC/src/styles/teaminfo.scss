@@ -1,0 +1,18 @@
+#teaminfo{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   background: whitesmoke;
+   min-height: 78vh;
+
+   ul{
+      list-style-type: none;
+      text-align: left;
+   }
+}
+
+.person_of_contact{
+   margin: 0 10px;
+   width: 25vw;
+}

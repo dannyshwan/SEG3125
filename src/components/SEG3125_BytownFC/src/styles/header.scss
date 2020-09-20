@@ -1,0 +1,210 @@
+#header{
+   display: flex;
+   align-items: center;
+   width: 100%;
+   height: 12vh;
+   font-family: "Bebas Neue", sans-serif;
+   background-color: #cf1322;
+}
+
+#iconButtons{
+   font-size: 2rem;
+   color: whitesmoke;
+   opacity: 0.5;
+   transition: opacity 0.3s ease;
+   margin-right: 1rem;
+}
+
+#iconButtons:hover{
+   cursor: pointer;
+   opacity: 1;
+}
+
+#changeLanguage{
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+}
+
+#web_navigation{
+   top: 0;
+   display: inherit;
+   height: inherit;
+   background: #cf1322;
+   align-items: inherit;
+   
+   
+   @media screen and (max-width: 1200px){
+      display: none;
+   }
+}
+
+#returnHome{
+   font-size: 3em;
+   letter-spacing: 2.5px;
+   text-decoration: none;
+   color: whitesmoke;
+   opacity: 0.75;
+   margin-left: 5rem;
+   transition: opacity 300ms ease;
+}
+
+#returnHome:hover{
+   opacity: 1;
+}
+
+#links{
+   position: absolute;
+   display: inherit;
+   align-items: inherit;
+   right: 0;
+   top: 0;
+   margin-right: 1.5rem;
+   height: 100%;
+}
+
+#mobile_navigation{
+   height: 100%;
+   background: #ff4d4f;
+   display: flex;
+   position: fixed;
+   z-index: 1; 
+   top: 0;
+   left: 0;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   text-align: center;
+   overflow-x: hidden;
+   transition: 0.5s ease;
+
+   @media screen and (min-width: 1200px){
+      display: none;
+   }
+}
+
+#mobile_links_ul{
+   padding: 0;
+   
+   li{
+      display: block;
+      padding: 1rem 0;
+   }
+
+}
+
+#mobile_external_links{
+   margin-top: 25px;
+   height: 6vh;
+   min-width: 100%;
+   overflow: hidden;
+   transition: opacity 0.3s ease;
+
+   @media screen and (max-width: 960px){
+      height: 5vh;
+   }
+
+   @media screen and (max-width: 600px){
+      height: 4vh;
+   }
+}
+
+#mobile_nav_trigger{
+   opacity: 1;
+   transition: opacity 0.2 ease;
+}
+
+#mobile_nav_trigger{
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 3rem;
+   transform: translate(25px,25px);
+   transition: opacity 0.25s ease;
+
+   @media screen and (max-width: 960px){
+      width: 2.5rem;
+   }
+
+   @media screen and (max-width: 600px){
+      width: 2rem;
+   }
+}
+
+#mobile_nav_trigger:hover{
+   cursor: pointer;
+}
+
+.link{
+   margin: 0 2rem;
+   padding: 0.25em 0.5rem;
+   font-size: 1.75rem;
+   letter-spacing: 2.5px;
+   position: relative;
+   user-select: none;
+   outline: none;
+   color: whitesmoke;
+   z-index: 2;
+   text-decoration: none;
+}
+
+.link::after {
+   content: "";
+   position: absolute;
+   left: 50%;
+   bottom: 9px;
+   z-index: -1;
+   width: 0;
+   height: 0.3em;
+   opacity: 0;
+   background:#003a8cc2;
+   transition: all 350ms cubic-bezier(0.5, 1.6, 0.15, 0.9);
+}
+
+.link:hover::after {
+   left: 0;
+   width: 100%;
+   opacity: 1;
+}
+
+.mobile_links{
+   color: rgb(50,50,50);
+   font-family: "Poppins", sans-serif;
+   letter-spacing: 5px;
+   text-decoration: none;
+   font-size: 5rem;
+
+   @media screen and (max-width: 960px){
+      font-size: 4rem;
+   }
+
+   @media screen and (max-width: 600px){
+      font-size: 3rem;
+   }
+}
+
+.image_links_mobile{
+   margin: 0 2rem;
+   @media screen and (max-width: 960px){
+      margin: 0 1rem;
+   }
+}
+
+.mobile_icon{
+   color: rgb(24, 24, 24);
+   opacity: 0.75;
+   font-size: 6vh;
+   transition: opacity 0.3s ease;
+
+   @media screen and (max-width: 960px){
+      font-size: 5vh;
+   }
+
+   @media screen and (max-width: 600px){
+      font-size: 4vh;
+   }
+}
+
+.mobile_icon:hover{
+   opacity: 1;
+}

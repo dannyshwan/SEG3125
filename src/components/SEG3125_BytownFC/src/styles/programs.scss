@@ -1,0 +1,28 @@
+#programs{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   background: whitesmoke;
+   min-height: 78vh;
+}
+
+#program_cards{
+   display: flex;
+   flex-direction: row;
+}
+
+.program_card{
+   width: 25rem;
+   margin: 2rem;
+   font-family: 'Ubuntu', sans-serif;
+
+   @media screen and (max-width: 600px){
+      width: 20rem;
+   }
+}
+
+.program_card:hover{
+   cursor: pointer;
+   
+}

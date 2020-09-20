@@ -1,0 +1,59 @@
+<html lang="en-US">
+<head>
+    <title>Survey Analysis</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link href="/styles/results.css" rel="stylesheet">
+</head>
+
+<body>
+    <img id="leetcode" src="/assets/leetcode.png" alt="leetcode_icon"> 
+    <p>LeetCode UI Survey Results</p>
+    <section>
+        <h2>Participants:</h2>
+        <ul>
+        <% for (var i=0; i<results[0].length; i++){ %>
+            <li><%= results[0][i].participant_name %></li>
+        <% } %>    
+        </ul>
+        <br>
+        <h2>Participant's school:</h2>
+        <ul>
+        <% for (var i=0; i<results[1].length; i++){ %>
+            <li><%= results[1][i].school %> :  <%= results[1][i].count %></li>
+        <% } %>    
+        </ul>
+        <br/>
+        <h2>Did participants find LeetCode helpful with improving their programing ability:</h2>
+        <ul>
+        <% for (var i=0; i<results[2].length; i++){ %>
+            <li><%= results[2][i].helpful %> :  <%= results[2][i].count %></li>
+        <% } %>    
+        </ul>
+        <br>
+        <h2>What participants found appealing about LeetCode:</h2>
+        <ul>
+        <% for (var i=0; i<results[3].length; i++){ %>
+            <li><%= results[3][i].appeal %> :  <%= results[3][i].count %></li>
+        <% } %>    
+        </ul>
+        <br>
+        <h2>What participants think should be the one thing LeetCode should look to improve on:</h2>
+        <ul>
+        <% for (var i=0; i<results[4].length; i++){ %>
+            <li><%= results[4][i].need_improvement %> :  <%= results[4][i].count %></li>
+        <% } %>    
+        </ul>
+        <br>
+        <h2>The likelihood of participants recommending LeetCode to others:</h2>
+        <ul>
+        <% for (var i=0; i<results[5].length; i++){ %>
+            <li><%= results[5][i].recommend_likelihood %> :  <%= results[5][i].count %></li>
+        <% } %>    
+        </ul>
+        <br>
+    </section>
+    <footer>
+        2020 © Daniel Shwan. All Rights Reserved
+     </footer>
+</body>
+</html>

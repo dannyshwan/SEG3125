@@ -1,0 +1,85 @@
+body{
+   background: whitesmoke; 
+   font-family: "Poppins", sans-serif;
+}
+
+#container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   width: 100%;
+   min-height: 92.5vh;
+   text-align: center;
+}
+
+#webpage_preview{
+   width: 50vw;
+   border-radius: 10px;
+}
+
+#leetcode{
+   width: 75px; 
+   margin: 25px;
+}
+
+#submit{
+   font-size: 1.5rem;
+   width: 10rem;
+}
+
+.questionnaire_component{
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+}
+
+.form-control{
+   width: 25rem;
+}
+
+.selection_label{
+   margin: 0 15px;
+   font-weight: 100;
+   font-size: 1rem;
+}
+
+.question{
+   color: #262263;
+}
+
+.form-control, .custom-select{
+   border: 1px solid #D3D3D3;
+   height: 45px;
+   border-bottom: 7.5px solid #D3D3D3;
+}
+
+.form-control:focus, .custom-select:focus{
+   border: 1px solid #9C6ADE;
+   border-bottom: 7.5px solid #9C6ADE;
+   box-shadow: none;
+}
+
+form{
+   background: rgba(39, 204, 127, 0.37);
+   color: rgb(50,50,50);
+   padding: 40px;
+   border-radius: 25px;
+   box-shadow: 0 0 1px;
+}
+
+label{
+   font-size: 1.25rem;
+   font-weight: bolder;
+}
+
+footer{
+   background: rgb(50,50,50);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 0;
+   width: 100%;
+   height: 7.5vh;
+   color: whitesmoke;
+}

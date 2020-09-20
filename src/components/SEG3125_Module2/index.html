@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>L-Mart</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link href="styles/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<section id="shopping_content">
+  <div>
+    <h1><b>L-Mart</b></h1>
+    <p><i>Where you can buy top quality products</i></p>
+  </div>
+  <br>
+  <br>
+  <div>
+    <!-- Tab links, each one with an onclick event associated with it -->
+    <div class="tab">
+      <button class="tablinks" onclick="openInfo(event, 'Client')" id="default">Client</button>
+      <button class="tablinks" onclick="openInfo(event, 'Products')">Products</button>
+      <button class="tablinks" onclick="openInfo(event, 'Cart')">Cart</button>
+    </div>
+
+    <!-- Tab content -->
+    <div id="Client" class="tabcontent">
+      <br>
+      <h3>Customer Information</h3>
+      <p>Tell us a bit about you.</p>
+      <h6 class="customer_information"><b>Any dietary restrictions?</b></h6>
+      <div id="dietSelect" name="dietSelect" onchange="populateListProductChoices('displayProduct')">
+        <div>
+          <div class="form-check form-check-inline">
+            <label class="form-check-label selection_label">Vegetarian</label>
+            <input class="form-check-input" type="checkbox" id="Vegetarian">
+          </div>
+          <div class="form-check form-check-inline">
+            <label class="form-check-label selection_label">Gluten Free</label>
+            <input class="form-check-input" type="checkbox" id="GlutenFree">
+          </div>
+        </div>
+        <br>
+        <br>
+        <h6 class="customer_information"><b>Would you prefer only organic products?</b></h6>
+        <div>
+          <div class="form-check form-check-inline">
+            <label for="yes" class="form-check-label selection_label">Yes</label>
+            <input class="form-check-input" name="organicOnly" type="radio" id="yes" value="yes">
+          </div>
+          <div class="form-check form-check-inline">
+            <label for="no" class="form-check-label selection_label">No</label>
+            <input class="form-check-input" name="organicOnly" type="radio" id="no" value="no">
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+    </div>
+
+    <div id="Products" class="tabcontent">
+      <br>
+      <h2>What we got for you</h2>
+      <p>These are preselected products based on your restrictions.</p>
+      <h5>Items to choose from:</h5>
+      <h6>(Max 10 items per purchase)</h6>
+      <div id="displayProduct"></div>
+      <br>
+      <button id="addCart" type="button" onclick="selectedItems()" class="btn btn-outline-success">
+        Add selected items to cart.
+      </button>
+      <br>
+      <br>
+    </div>
+
+    <div id="Cart" class="tabcontent">
+      <br>
+      <h3>Shopping Cart</h3>
+      <p>This is what you have so far.</p>
+      <div id="displayCart"></div>
+      <br>
+    </div>
+  </div>
+</section>
+
+<script src="scripts/groceries.js"></script>
+<script src="scripts/main.js"></script>
+<script>
+  document.getElementById("default").click()
+</script>
+
+</body>
+<footer>
+  2020 © Daniel Shwan. All Rights Reserved
+</footer>
+</html>

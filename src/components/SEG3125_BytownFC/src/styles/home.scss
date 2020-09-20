@@ -1,0 +1,21 @@
+#home{
+   background: url('../assets/img/home.png');
+   background-repeat: no-repeat;
+   background-size: cover;
+   color: whitesmoke;
+   flex-direction: column;
+
+   p{
+      font-family: "Bebas Neue", sans-serif;
+      font-size: 10rem;
+      width: 75vw;
+      padding: 0;
+      margin: 0;
+   }
+}
+
+#badge{
+   height: 10vh;
+   margin-left: 5rem;
+   margin-right: -4rem;
+}
