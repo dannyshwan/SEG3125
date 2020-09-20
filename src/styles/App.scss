@@ -1,43 +1,43 @@
-.App {
-  text-align: center;
+.App{
+  font-family: "Poppins", sans-serif;
   display: flex;
-  justify-content: center;
-  background:whitesmoke;
-  flex-direction: column;
-  height: 100vh;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
+.content {
+  display: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+  text-align: center;
+  background:whitesmoke;
+  flex-direction: column;
+  height: 92.5vh;
+  width: 100vw;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  h1{
+    font-size: 3rem;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+.customButton {
+  margin: 15px;
+  font-size: 50px;
+}
+
+.footer{
+  position: absolute;
+  display: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+  bottom: 0;
+  height: 7.5vh;
+  width: 100vw;
+  background: rgb(34, 34, 34); 
+  font-size: 1.25rem;
+  color: whitesmoke;
+
+  p{
+    margin:0;
   }
 }

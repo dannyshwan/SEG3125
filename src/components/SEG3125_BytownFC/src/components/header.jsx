@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 import HelpIcon from '@material-ui/icons/Help';
 import LanguageIcon from '@material-ui/icons/Language';
+import CodeIcon from '@material-ui/icons/Code';
 import {withTranslation} from "react-i18next";
 import i18n from '../i18n'
 import '../styles/header.scss';
@@ -69,6 +70,7 @@ class Header extends React.Component{
                   <Link className='link' to='/programs'>{t("Development_Header")}</Link>
                   <HelpIcon id="iconButtons" onClick={() => {this.showContent()}}/>
                   <LanguageIcon id="iconButtons" onClick={() => {this.openChangeLanguageDialog()}} />
+                  <CodeIcon onClick={() => {window.open("https://github.com/dannyshwan/Turnips/tree/master/src/components/SEG3125_BytownFC")}}/>
                </div>
             </div>
             <Dialog
